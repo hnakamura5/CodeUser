@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Fix vim bindings. They did not work now. The commands extension.vim_ctrl+j and so on may be broken.
+    {
+        // I coundnot find a vscode command to insert newline. So trying vim.remap, but also do not work.
+        "key": "ctrl+j",
+        "command": "vim.remap",
+        "args": {
+            "value": [
+                "<Enter>"
+            ]
+        },
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "extension.vim_down",
+        "when": "vim.active && vim.use<C-n> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "extension.vim_up",
+        "when": "vim.active && vim.use<C-p> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+q",
+        //"command": "extension.vim_winCtrlQ",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
+    {
+        "key": "ctrl+r",
+        "command": "extension.vim_ctrl+r",
+        "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+    },
+]
