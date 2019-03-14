@@ -100,7 +100,7 @@
         {
             "before": [
                 "<leader>",
-                "<space>"
+                ":"
             ],
             "after": [],
             "commands": [
@@ -1164,4 +1164,6 @@
             ]
         }
     ],
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "FreshDark",
 }

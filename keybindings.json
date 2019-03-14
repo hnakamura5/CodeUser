@@ -32,4 +32,9 @@
         "command": "extension.vim_ctrl+r",
         "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
     },
+    {
+        "key": "ctrl+b",
+        "command": "extension.vim_left",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl"
+    },
 ]
