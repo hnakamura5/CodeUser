@@ -13,12 +13,18 @@
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "trailing-spaces.deleteModifiedLinesOnly": true,
     "git.path": "C:\\Programs\\GitSDK\\mingw64\\bin\\git.exe",
     "C_Cpp.default.compilerPath": "clang++",
     "C_Cpp.default.cppStandard": "c++14",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.clang_format_sortIncludes": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--aggressive"
+    ],
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
@@ -1164,6 +1170,7 @@
             ]
         }
     ],
-    "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "FreshDark",
+    "cmake.configureOnOpen": false,
+    "workbench.iconTheme": "Monokai Pro Icons"
 }
