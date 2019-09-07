@@ -13,18 +13,38 @@
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
+    "editor.matchBrackets": true,
     "trailing-spaces.deleteModifiedLinesOnly": true,
     "git.path": "C:\\Programs\\GitSDK\\mingw64\\bin\\git.exe",
     "C_Cpp.default.compilerPath": "clang++",
-    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.clang_format_style": "file",
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Args": [
         "--aggressive",
         "--aggressive"
     ],
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "bracketPairColorizer.colorMode": "Consecutive",
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "indentRainbow.includedLanguages": [
+        "nim",
+        "nims",
+        "python",
+        "shellscript",
+        "fsharp"
+    ],
+    "indentRainbow.colors": [
+        "rgba(255,202,40,0.1)",
+        "rgba(182,187,106,0.1)",
+        "rgba(66,165,245,0.1)",
+        "rgba(239,83,80,0.1)",
+        "rgba(120,144,156,0.1)"
+    ],
+    "cmake.configureOnOpen": false,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
@@ -35,6 +55,7 @@
     "vim.incsearch": true,
     "vim.whichwrap": "h,l,<,>,[,]",
     "vim.foldfix": true,
+    "vim.camelCaseMotion.enable": true,
     "vim.handleKeys": {
         "<C-a>": false, // 全選択
         "<C-f>": false, // 検索
@@ -99,6 +120,30 @@
                 "k"
             ]
         },
+        {
+            "before": [
+                "<C-o>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateBack",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateForward",
+                    "args": []
+                }
+            ]
+        }
     ],
     "window.zoomLevel": 0,
     //VSpaceCode
@@ -1170,7 +1215,9 @@
             ]
         }
     ],
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "FreshDark",
-    "cmake.configureOnOpen": false,
-    "workbench.iconTheme": "Monokai Pro Icons"
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#212121",
+    }
 }

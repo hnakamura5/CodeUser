@@ -37,9 +37,9 @@
         "command": "extension.vim_left",
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl"
     },
-    {
-        "key": "ctrl+l",
-        "command": "cursorRight",
-        "when": "editorTextFocus"
-    }
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "cursorRight",
+    //     "when": "editorTextFocus"
+    // }
 ]
