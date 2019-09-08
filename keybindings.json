@@ -14,13 +14,13 @@
     },
     {
         "key": "ctrl+n",
-        "command": "extension.vim_down",
-        "when": "vim.active && vim.use<C-n> && !inDebugRepl"
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Insert' && !inDebugRepl"
     },
     {
         "key": "ctrl+p",
-        "command": "extension.vim_up",
-        "when": "vim.active && vim.use<C-p> && !inDebugRepl"
+        "command": "cursorUp",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Insert' && !inDebugRepl"
     },
     {
         "key": "ctrl+shift+q",
@@ -37,9 +37,9 @@
         "command": "extension.vim_left",
         "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl"
     },
-    // {
-    //     "key": "ctrl+l",
-    //     "command": "cursorRight",
-    //     "when": "editorTextFocus"
-    // }
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
+    }
 ]
