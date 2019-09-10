@@ -14,6 +14,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.matchBrackets": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "trailing-spaces.deleteModifiedLinesOnly": true,
     "git.path": "C:\\Programs\\GitSDK\\mingw64\\bin\\git.exe",
     "C_Cpp.default.compilerPath": "clang++",
@@ -45,6 +46,22 @@
         "rgba(239,83,80,0.1)",
         "rgba(120,144,156,0.1)"
     ],
+    "todo-tree.customHighlight": {
+        "TODO": {
+            "foreground": "#F5F5F5",
+            "background": "#C62828",
+            "icon": "alert",
+            "iconColour": "#C62828",
+            "type": "text-and-comment"
+        },
+        "FIXME": {
+            "foreground": "#F5F5F5",
+            "background": "#F9A825",
+            "icon": "beaker",
+            "iconColour": "#F5F5F5",
+            "type": "text",
+        }
+    },
     "cmake.configureOnOpen": false,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
