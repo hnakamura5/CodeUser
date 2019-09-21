@@ -34,8 +34,8 @@
     },
     {
         "key": "ctrl+b",
-        "command": "extension.vim_left",
-        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl"
+        "command": "cursorLeft",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
     },
     {
         "key": "ctrl+l",

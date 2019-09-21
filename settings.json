@@ -4,15 +4,15 @@
     "files.autoSaveDelay": 3000,
     "files.autoGuessEncoding": true,
     "files.trimTrailingWhitespace": true,
-    "editor.fontSize": 12,
-    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 11.5,
+    "terminal.integrated.fontSize": 11.5,
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "editor.fontFamily": "'源ノ角ゴシック Code JP'",
     "editor.tabCompletion": "on",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.matchBrackets": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "trailing-spaces.deleteModifiedLinesOnly": true,
@@ -24,11 +24,15 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "C_Cpp.clang_format_sortIncludes": true,
     "C_Cpp.clang_format_style": "file",
+    "python.pythonPath": "C:\\Programs\\Python37\\python.exe",
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Args": [
         "--aggressive",
         "--aggressive"
     ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
     "bracketPairColorizer.forceUniqueOpeningColor": true,
     "bracketPairColorizer.colorMode": "Consecutive",
     "bracketPairColorizer.showBracketsInGutter": true,
@@ -40,13 +44,13 @@
         "fsharp"
     ],
     "indentRainbow.colors": [
-        "rgba(255,202,40,0.1)",
-        "rgba(182,187,106,0.1)",
-        "rgba(66,165,245,0.1)",
-        "rgba(239,83,80,0.1)",
-        "rgba(120,144,156,0.1)"
+        "rgba(255,202,40,0.5)",
+        "rgba(182,187,106,0.5)",
+        "rgba(66,165,245,0.5)",
+        "rgba(239,83,80,0.5)",
+        "rgba(120,144,156,0.5)"
     ],
-    "todo-tree.customHighlight": {
+    "todo-tree.highlights.customHighlight": {
         "TODO": {
             "foreground": "#F5F5F5",
             "background": "#C62828",
@@ -79,11 +83,11 @@
         "<C-f>": false, // 検索
         "<C-c>": false, // コピー
         "<C-x>": false, // カット
-        "<C-v>": false, // ペースト
         "<C-i>": false, // 列選択。別に要らないけどvim側の機能がタブとかいうもっといらない物体
         "<C-y>": false, // Redo
         "<C-z>": false, // Undo
         "<C-q>": false, // サイドバー周り
+        "<C-k>": false, // vscodeのプレフィックス
     },
     "vim.insertModeKeyBindings": [
         {
@@ -117,6 +121,18 @@
             ],
             "after": [
                 "<Down>"
+            ]
+        },
+        {
+            "before": [
+                "<C-v>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "paste",
+                    "args": []
+                }
             ]
         },
     ],
@@ -543,7 +559,7 @@
         "after": [],
         "commands": [
             {
-                "command": "git.commit",
+                "command": "git.commitAll",
                 "args": []
             }
         ]
@@ -656,20 +672,6 @@
         "commands": [
             {
                 "command": "git.unstage",
-                "args": []
-            }
-        ]
-    },
-    {
-        "before": [
-            "<leader>",
-            "h",
-            "d"
-        ],
-        "after": [],
-        "commands": [
-            {
-                "command": "workbench.action.openGlobalKeybindings",
                 "args": []
             }
         ]
