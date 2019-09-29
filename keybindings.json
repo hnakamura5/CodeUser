@@ -49,5 +49,13 @@
     {
         "key": "ctrl+2",
         "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+s",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
     }
 ]
